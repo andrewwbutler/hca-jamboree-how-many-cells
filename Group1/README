@@ -4,6 +4,6 @@ Rscript --vanilla actual_separability.R human_pancreas.loom activated_stellate q
 
 Deliverable 2: This is provided as the bash script predicted_separability.sh. It makes two calls: one to the R script prediction_metrics.R which featurizes the input loom file and one to predict-separability.py which makes the separability predictions based on the trained model.
 
-bash predicted_separability.sh human_pancreas_activated_quiescent_stellate.loom 0.03 0.02 predictions.tsv
+bash predicted_separability.sh human_pancreas_activated_quiescent_stellate.loom 0.03 activated_stellate 0.02 quiescent_stellate predictions.tsv
 
 NOTE: this script expects the test loom files to be in the same directory the script is run from. 
