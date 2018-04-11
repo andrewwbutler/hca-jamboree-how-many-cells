@@ -270,7 +270,7 @@ dataset <- readLoom(args[[1]])
 # activated_stellate 0.03 quiescent_stellate 0.02 predictions.tsv
 
 metrics <- CalcMetrics(dataset, args[[2]], args[[3]], args[[4]], args[[5]])
-
+options(scipen = 999)
 metricsdf = data.frame("NumCells"=seq(1000, 100000, 1000),
                        "cosine"=metrics["cosine"],
                        "spearman"=metrics["spearman"],
